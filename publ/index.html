@@ -1,0 +1,32 @@
+<html>
+<head>
+	
+</head>
+
+
+<body>
+ <center>   
+	<table border="0" text-align="center">
+		<tr>
+			<td text-align="center">
+				<script language="javascript">
+				function VecImagenes()
+				{
+					n=0;
+					this[n++]="img/img01.jpg";
+					this[n++]="img/img02.jpg";
+					this[n++]="img/img03.jpg";
+					this[n++]="img/img04.jpg";
+					this[n++]="img/img05.jpg";					
+					this.N=n;
+				}
+				var Imagenes=new VecImagenes();
+				src= Imagenes[ Math.floor(Math.random() * Imagenes.N) ] ;
+				document.write("<img src="+src+" align=left>");
+		</script> 
+			</td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>
